@@ -1,0 +1,36 @@
+* {
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c5d2c;
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        font-size: 4rem
+    }
+
+    .container {
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        form {
+            width: 33%;
+
+        }
+    }
+}
+
+// .returnEngTranslation,
+// .returnMorseTranslation {
+//     display: none;
+// }
