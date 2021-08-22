@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,400&display=swap');
 * {
-
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -12,21 +13,59 @@ body {
         align-items: center;
         justify-content: center;
         width: 100vw;
-        font-size: 4rem
+        font-size: 4rem;
+        color: white;
     }
 
     .container {
         width: 100vw;
-        height: 80vh;
+        // height: 80vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
+        div {
+            border: 2px solid black;
+            width: 450px;
+            height: 300px;
+            background: black;
+            color: white;
+            opacity: 0.8;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
 
-        form {
-            width: 33%;
+            form {
+                width: 33%;
 
+                input {
+                    width: 100%;
+                    padding: 6px 10px;
+                    margin: 10px 0;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    box-sizing: border-box;
+                    display: block;
+                }
+                button {
+                    background: #3f7c22;
+                    color: #fff;
+                    border: 0;
+                    padding: 8px;
+                    border-radius: 8px;
+                    cursor: pointer;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+            }
         }
+
     }
 }
 
@@ -34,3 +73,12 @@ body {
 // .returnMorseTranslation {
 //     display: none;
 // }
+
+@media screen and (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+
+    }
+}

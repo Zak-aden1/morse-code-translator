@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,500;1,400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,14 +14,56 @@ body .title {
   justify-content: center;
   width: 100vw;
   font-size: 4rem;
+  color: white;
 }
 body .container {
   width: 100vw;
-  height: 80vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-body .container form {
+body .container div {
+  border: 2px solid black;
+  width: 450px;
+  height: 300px;
+  background: black;
+  color: white;
+  opacity: 0.8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+body .container div form {
   width: 33%;
+}
+body .container div form input {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: block;
+}
+body .container div form button {
+  background: #3f7c22;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+body .container div form button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
 }
